@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CSS 101</title>
     <style>
+        /* selector with element name
+            basically use this form 
+            element {}*/
         h1 {
+            text-decoration: line-through;
+        }
+        /* selector with class name 
+            use with .classname{}*/
+        .blue {
             color: blue;
         }
-        body {
-            background-color: black;
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+        /* selector with id name
+            use with #id_name{} */
+        #the-title {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <h1>This is an h1</h1>
+    <!--
+        This is HTML Comment
+    -->
+    <h1 class="blue uppercase" id="the-title">
+        This is an h1
+    </h1>
+    <div class="blue">This is a div</div>
+    <p class="uppercase">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quae ea dolorum quasi sunt blanditiis placeat
+        illum dolorem non? Ducimus optio nihil obcaecati pariatur, dolore facere tempora eaque natus voluptate!
+    </p>
     <h1>This is another h1</h1>
+    <strong>
+        This is bolded text
+    </strong>
+    This is normal text
 </body>
+
 </html>
