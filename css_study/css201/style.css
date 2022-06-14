@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 3000px;
+
+}
+/*  relative position */         
+.rel_box {
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    position: relative;
+}
+/* absolute position */
+.abs_box {
+    width: 300px;
+    height: 300px;
+    border: 3px solid blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+}
+/* fixed position */
+.fix_box {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+.stk_box {
+    position: sticky;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    top: 0;
+    color: black;
+}
