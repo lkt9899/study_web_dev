@@ -7,6 +7,20 @@
         #parent > .box {
             height: 20px;
             border: 1px solid blue;
+            color: white;
+        }
+        
+        .box:not(.dontselectme) {
+            background-color: white;
+        }
+
+        .box:hover {
+            background-color: gray;
+        }
+
+        .box:nth-child(5) {
+            background-color: yellow;
+            color: black;
         }
     </style>
 </head>
@@ -14,9 +28,9 @@
     <div id="parent">
         <div class="box"></div>
         <div class="box"></div>
+        <div class="box dontselectme"></div>
         <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">Select me</div>
         <div class="box"></div>
     </div>
     <div class="box">This is not a blue borderd box</div>
